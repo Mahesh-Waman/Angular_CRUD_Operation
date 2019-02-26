@@ -1,0 +1,12 @@
+
+<mat-toolbar color="primary">
+  <button mat-button *ngIf="auth.isLoggednIn()" routerLink="/home">Home</button>
+  <button mat-button *ngIf="!auth.isLoggednIn()" routerLink="/register">Register</button>
+  <button mat-button *ngIf="!auth.isLoggednIn()" routerLink="/login">Login</button>
+  <button mat-button [matMenuTriggerFor]="menu" *ngIf="auth.isLoggednIn()">User Info</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item  routerLink="/info/update">Update</button>
+    <button mat-menu-item routerLink="/info/delete">Delete</button>
+  </mat-menu>
+  <button mat-button *ngIf="auth.isLoggednIn()" (click)="auth.logout()">Logout</button>
+</mat-toolbar>

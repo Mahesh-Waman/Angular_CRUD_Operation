@@ -1,0 +1,45 @@
+<mat-card>
+    <div style="margin:30px 350px 10px 440px;border: 2px solid gray;padding: 10px 0px 20px 80px;border-radius: 10px;">
+      <h1><label>{{title}}</label></h1>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <mat-form-field style="width:240px !important">
+              <input matInput  type="text" placeholder="Name" formControlName="name"  [readonly]="readName"/>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:240px !important">
+                <input matInput  type="email" placeholder="Email" formControlName="email"  [readonly]="readEmailid"/>
+              </mat-form-field>
+              <br>
+              <mat-form-field style="width:240px !important">
+                <input matInput  type="text" placeholder="User Name" formControlName="uName"  [readonly]="readuName"/>
+              </mat-form-field>
+              <br>
+              <mat-form-field style="width:240px !important">
+                  <input matInput  type="text" placeholder="Contact Number" formControlName="MobNo" [readonly]="readContactNumber"/>
+                </mat-form-field>
+                <br>
+                <div *ngIf="action=='update'">
+                  <mat-checkbox class="example-margin" [(ngModel)]="checked" [ngModelOptions]="{standalone: true}" (click)="checkclick()">Change Password</mat-checkbox>
+                  <!-- <mat-checkbox>Check me!</mat-checkbox> -->
+                  <!-- <input type="checkbox" [(ngModel)]="checked" (click)="checkclick()" value="Checkdeddsadsad"/> -->
+                </div>
+                <div *ngIf="show">
+                  <mat-form-field style="width:240px !important">
+                    <input matInput  type="password" placeholder="Password" formControlName="password" [readonly]="readPassword"/>
+                  </mat-form-field>
+                  <br>
+              <mat-form-field style="width:240px !important">
+                <input matInput  type="password" placeholder="ConfirmPassword" formControlName="CPassword" [readonly]="readConfirmPassword"/>
+              </mat-form-field>
+  
+                </div>
+                  
+               
+                
+            <br>
+            <button mat-raised-button type="submit"  color="primary">Submit</button>
+            <!-- [disabled]="form.invalid" -->
+          </form>
+    </div>
+    
+  </mat-card>

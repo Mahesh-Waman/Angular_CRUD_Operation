@@ -1,0 +1,21 @@
+
+<h2>{{title}}</h2>      
+<p *ngIf="showElement">Show Element</p>      
+<div [ngSwitch]="inpvalue">      
+<p style='color:blue'  *ngSwitchCase="1">You have selected M S Dhoni</p>      
+<p style='color:blue'  *ngSwitchCase="2">You have selected Sachin Tendulkar</p>      
+<p style='color:blue'  *ngSwitchCase="3">You have selected Satyaprakash Samantaray</p>     
+<p style='color:red'  *ngSwitchDefault>Sorry! Invalid selection....</p>      
+</div>
+<p>Button Text font size , weight and style is apply using ngStyle</p>
+<button style='color:green' [ngStyle]="MyStyle()">Applying style using ngStyle</button>
+<br><br>
+<button class='colorClass' [ngClass]='applyClasses()'>Applying style using ngClass</button>
+
+<br>
+<p MyRed>Color of text is set by using custom Directives</p>   
+
+
+<div appChbgcolor>
+  <h3>{{title}}</h3>
+</div>
