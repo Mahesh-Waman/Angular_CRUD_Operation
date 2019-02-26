@@ -9,12 +9,17 @@
 ## steps of Integration of Angular Material
 
 1) firstly install Angular Material using command `npm install --save @angular/material @angular/cdk`
+
 2) after above command install hammerjs using command ` npm install --save hammerjs`
+
 3) after all install import css file in `style.scss` file or `style.css` file  this line `@import "~@angular/material/prebuilt-themes/indigo-pink.css";`
+
 4)include the angular material icon cdn in `index.html` cdn url is `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">`
 
 5)[Angular Material](https://material.angular.io/guide/getting-started).
+
 6)[Auth Guard Implenation Link](https://dzone.com/articles/implementing-guard-in-angular-5-app).
+
 7)[youTube video Angular Material Integration in Angular](https://www.youtube.com/watch?v=Fcr-gM-QThc).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
