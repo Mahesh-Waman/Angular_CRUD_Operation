@@ -1,7 +1,10 @@
 # AngularAuthguard
 
-##precipitation
+## precipitation
+
 1) you need angular/cli version 7 or above.
+2) after getting clone or download run command `npm install`.
+3) To run this project you need to downlaod node js Api code [Click here to downlaod code](https://github.com/Mahesh-Waman/Node_CURD_REST_Api.git).
 
 ## steps of Integration of Angular Material
 
